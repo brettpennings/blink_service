@@ -15,14 +15,14 @@
 :environment:
   - :mcu: atmega328p
   - :f_cpu: 16000000UL 
-  - :serial_port: /dev/tty.usbmodemfd121
+  - :serial_port: COM9
   - :objcopy: avr-objcopy
   # Uncomment these lines if you are using windows and don't have these tools in your path
-  # - :path:
-    # - C:\mingw\bin
-    # - C:\WinAVR-20100110\bin
-    # - C:\WinAVR-20100110\utils\bin
-    # - #{ENV['PATH']}
+  - :path:
+    - C:\mingw\bin
+    - C:\WinAVR-20100110\bin
+    - C:\WinAVR-20100110\utils\bin
+    - #{ENV['PATH']}
 
 :extension:
   :executable: .bin
