@@ -1,13 +1,10 @@
-#ifndef SERIAL_H
-#define SERIAL_H
+#ifndef Serial_H
+#define Serial_H
 
-#include <stdint.h>
+#include "ProcessTasks.h"
+#include "Blinker.h"
 
-typedef struct {
-  uint16_t port;
-} Serial_t;
+void Serial_Init(void);
+void Serial_Service(Blinker_t * blinker);
 
-void Serial_Init(Serial_t * serial, uint16_t port);
-void Serial_Service(Serial_t * serial);
-
-#endif /* SERIAL_H */
+#endif // Serial_H
